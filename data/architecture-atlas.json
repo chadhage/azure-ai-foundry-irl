@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "notice": "Original reference designs grounded in public Microsoft documentation. Documentation and asset provenance are verified; these systems are not deployed, certified, or cloud-tested.",
+  "sources": [
+    {"id":"MS01","title":"Azure architecture icons and permitted use","url":"https://learn.microsoft.com/azure/architecture/icons/","terms":["Microsoft permits the use","Don't crop, flip, or rotate"],"supports":"Official Azure SVG download, permitted architectural use, product labeling, and unchanged artwork."},
+    {"id":"MS02","title":"Microsoft Fabric product, workload, and item icons","url":"https://learn.microsoft.com/fabric/fundamentals/icons","terms":["Microsoft permits the use","Icons.zip"],"supports":"Official Fabric and Purview artwork, its Microsoft-owned distribution, and icon-use restrictions."},
+    {"id":"MS03","title":"Baseline Microsoft Foundry chat reference architecture","url":"https://learn.microsoft.com/azure/architecture/ai-ml/architecture/baseline-microsoft-foundry-chat","terms":["standard agent setup","private endpoint","conversation"],"supports":"Enterprise ingress, private connectivity, managed identity, agent tool/model flow, and dedicated agent-managed state."},
+    {"id":"MS04","title":"Azure Container Apps overview","url":"https://learn.microsoft.com/azure/container-apps/overview","terms":["API endpoints","scale to zero","HTTPS"],"supports":"Consumption-style container API hosting, HTTPS ingress, and conditional scale-to-zero behavior; not a zero-cost guarantee."},
+    {"id":"MS05","title":"External tenant email OTP sign-up and sign-in user flow","url":"https://learn.microsoft.com/entra/external-id/customers/how-to-user-flow-sign-up-sign-in-customers","terms":["Email one-time passcode","external tenant"],"supports":"External-tenant identity and email OTP configuration, not custom application session duration or daily quotas."},
+    {"id":"MS06","title":"Design scalable and performant Azure tables","url":"https://learn.microsoft.com/azure/storage/tables/table-storage-design","terms":["ETag","same partition","Entity Group Transactions"],"supports":"Optimistic concurrency and atomic entity-group transactions within one table partition only."},
+    {"id":"MS07","title":"What is ontology in Microsoft Fabric IQ? (preview)","url":"https://learn.microsoft.com/fabric/iq/ontology/overview","terms":["preview","data binding","general-purpose data-query engine"],"supports":"Entity types, properties, relationships, rules, source bindings, source-owned metrics, and optional graph execution; ontology is not a standalone data store/query engine."},
+    {"id":"MS08","title":"Create relationship types in ontology (preview)","url":"https://learn.microsoft.com/fabric/iq/ontology/how-to-create-relationship-types","terms":["preview","Origin entity type","mapping table"],"supports":"Origin/target relationship types, supported source bindings, Fabric capacity and tenant prerequisites."},
+    {"id":"MS09","title":"Medallion architecture for Fabric with OneLake","url":"https://learn.microsoft.com/fabric/onelake/onelake-medallion-lakehouse-architecture","terms":["Bronze","Silver","Gold","Delta"],"supports":"Raw, enriched, and curated data layers, separated lakehouses/warehouses, and Delta-oriented refinement."},
+    {"id":"MS10","title":"Data quality in Microsoft Purview Unified Catalog","url":"https://learn.microsoft.com/purview/unified-catalog-data-quality","terms":["completeness","conformity","freshness","Managed Identity"],"supports":"Profiling, configured rules, scans, scores, six quality dimensions, managed identity, permissions and regional prerequisites."},
+    {"id":"MS11","title":"Create data quality rules","url":"https://learn.microsoft.com/purview/unified-catalog-data-quality-rules","terms":["Table lookup","Empty/blank fields","last modified dates"],"supports":"Specific rule semantics, null-handling caveats, lookup checks, and freshness based on asset modification metadata."},
+    {"id":"MS12","title":"Sources and file formats supported for Purview data quality","url":"https://learn.microsoft.com/purview/unified-catalog-data-quality-supported-sources-file-formats","terms":["Fabric","Lakehouse","Delta","Parquet"],"supports":"Fabric lakehouse and supported file-format scanning; support remains subject to current connection, region, and source restrictions."},
+    {"id":"MS13","title":"Data quality in Fabric materialized lake views","url":"https://learn.microsoft.com/fabric/data-engineering/materialized-lake-views/data-quality","terms":["Row-level data quality constraints","FAIL","DROP"],"supports":"Explicit transformation-time quality enforcement, including FAIL/DROP semantics; these differ from Purview assessment scores."},
+    {"id":"MS14","title":"Plan and manage costs for Microsoft Foundry","url":"https://learn.microsoft.com/azure/foundry/concepts/manage-costs","terms":["Fine-tuned","Hosting","usage"],"supports":"Usage-based AI costs and potentially idle fine-tuned hosting charges; diagrams do not imply those services fit the lean budget."}
+  ],
+  "packages": [
+    {"id":"azure-v24","filename":"Azure_Public_Service_Icons_V24.zip","url":"https://arch-center.azureedge.net/icons/Azure_Public_Service_Icons_V24.zip","sha256":"921594ccd1bf3d9c0a1bd7b6d924e050551a59342f2b353bb74bdcf761c35141","terms_source":"MS01"},
+    {"id":"fabric-6.1.0","filename":"Fabric_Icons_564ec413.zip","url":"https://raw.githubusercontent.com/microsoft/fabric-samples/564ec4139742b838468fcf8aa44dac4afe02ce92/docs-samples/Icons.zip","sha256":"fc22e71b0545ed15e22c53f16bf4fb06ffe72daabd3c90a947a6e481c9675e6b","terms_source":"MS02"}
+  ],
+  "icons": [
+    {"id":"foundry","package":"azure-v24","entry":"Azure_Public_Service_Icons/Icons/ai + machine learning/035746832-icon-service-AI-Foundry.svg"},
+    {"id":"agents","package":"azure-v24","entry":"Azure_Public_Service_Icons/Icons/ai + machine learning/038470523-icon-service-Foundry-Agent-Service.svg"},
+    {"id":"models","package":"azure-v24","entry":"Azure_Public_Service_Icons/Icons/ai + machine learning/038470614-icon-service-Foundry-Models.svg"},
+    {"id":"search","package":"azure-v24","entry":"Azure_Public_Service_Icons/Icons/ai + machine learning/10044-icon-service-Cognitive-Search.svg"},
+    {"id":"container-apps","package":"azure-v24","entry":"Azure_Public_Service_Icons/Icons/other/02989-icon-service-Container-Apps-Environments.svg"},
+    {"id":"external-id","package":"azure-v24","entry":"Azure_Public_Service_Icons/Icons/identity/03425-icon-service-external-id.svg"},
+    {"id":"storage","package":"azure-v24","entry":"Azure_Public_Service_Icons/Icons/storage/10086-icon-service-Storage-Accounts.svg"},
+    {"id":"monitor","package":"azure-v24","entry":"Azure_Public_Service_Icons/Icons/management + governance/00001-icon-service-Monitor.svg"},
+    {"id":"key-vault","package":"azure-v24","entry":"Azure_Public_Service_Icons/Icons/security/10245-icon-service-Key-Vaults.svg"},
+    {"id":"app-service","package":"azure-v24","entry":"Azure_Public_Service_Icons/Icons/app services/10035-icon-service-App-Services.svg"},
+    {"id":"gateway","package":"azure-v24","entry":"Azure_Public_Service_Icons/Icons/networking/10076-icon-service-Application-Gateways.svg"},
+    {"id":"private-endpoint","package":"azure-v24","entry":"Azure_Public_Service_Icons/Icons/other/02579-icon-service-Private-Endpoints.svg"},
+    {"id":"cosmos","package":"azure-v24","entry":"Azure_Public_Service_Icons/Icons/databases/10121-icon-service-Azure-Cosmos-DB.svg"},
+    {"id":"firewall","package":"azure-v24","entry":"Azure_Public_Service_Icons/Icons/networking/10084-icon-service-Firewalls.svg"},
+    {"id":"fabric","package":"fabric-6.1.0","entry":"v6.1.0/package/dist/svg/fabric_48_color.svg"},
+    {"id":"lakehouse","package":"fabric-6.1.0","entry":"v6.1.0/package/dist/svg/lakehouse_48_item.svg"},
+    {"id":"pipeline","package":"fabric-6.1.0","entry":"v6.1.0/package/dist/svg/pipeline_48_item.svg"},
+    {"id":"purview","package":"fabric-6.1.0","entry":"v6.1.0/package/dist/svg/purview_48_color.svg"}
+  ],
+  "diagrams": [
+    {
+      "id":"lean-demo-topology",
+      "title":"Lean showcase topology",
+      "kind":"topology",
+      "profile":"Proposed demo baseline",
+      "width":1280,
+      "height":760,
+      "summary":"A public, static learning surface is separated from authenticated, metered Azure execution.",
+      "boundary":"Original application design. The 900-second session and three daily starts are application policies, not Entra token settings.",
+      "sources":["MS04","MS05","MS06","MS14"],
+      "groups":[
+        {"label":"Public content - no provider credentials","box":[32,124,300,340]},
+        {"label":"Azure demo subscription - proposed services","box":[376,124,872,540]}
+      ],
+      "nodes":[
+        {"id":"pages","label":"GitHub Pages","detail":"Static HTML / CSS / JS\nPublic catalog and atlas","box":[60,190,244,116]},
+        {"id":"visitor","label":"Approved visitor","detail":"Browser, not a trusted backend","box":[60,348,244,92]},
+        {"id":"identity","label":"Entra External ID","detail":"External tenant / email OTP","icon":"external-id","box":[416,188,336,116]},
+        {"id":"api","label":"Container Apps","detail":"FastAPI API / admission control","icon":"container-apps","box":[416,380,336,116]},
+        {"id":"foundry","label":"Microsoft Foundry","detail":"Project / activated AI services","icon":"foundry","box":[864,380,336,116]},
+        {"id":"ledger","label":"Azure Storage","detail":"Session / quota / spend ledger","icon":"storage","box":[416,540,336,100]},
+        {"id":"ops","label":"Azure Monitor","detail":"Sanitized traces / actual usage","icon":"monitor","box":[864,540,336,100]}
+      ],
+      "edges":[
+        {"points":[[182,306],[182,348]],"label":"Read","label_at":[212,318]},
+        {"points":[[304,394],[352,394],[352,246],[416,246]],"label":"Sign in","label_at":[344,322]},
+        {"points":[[304,420],[416,420]],"label":"HTTPS","label_at":[360,396]},
+        {"points":[[584,304],[584,380]],"label":"Validated identity","label_at":[680,328],"dashed":true},
+        {"points":[[752,438],[864,438]],"label":"Admitted call","label_at":[808,414]},
+        {"points":[[584,496],[584,540]],"label":"ETag","label_at":[620,504]},
+        {"points":[[1032,496],[1032,540]],"label":"Evidence","label_at":[1088,504],"dashed":true}
+      ],
+      "steps":[
+        {"text":"GitHub Pages serves public learning content; only the backend may call paid services. GitHub hosting is a user-selected boundary, not a Microsoft-hosting claim.","sources":["MS04"]},
+        {"text":"Entra External ID supplies email-OTP authentication. Backend approval, token validation, a non-renewable 900-second application session and three starts per UTC day remain custom requirements.","sources":["MS05","MS06"]},
+        {"text":"Conditional ledger writes precede paid work. A global spending reservation and a per-identity session transaction must not be mistaken for one cross-partition transaction.","sources":["MS06"]},
+        {"text":"AI modules are activated only after price, quota, regional and access checks. The architecture does not promise a hard Azure billing cap.","sources":["MS14"]}
+      ],
+      "decisions":["Keep secrets and paid execution out of the public origin.","Use durable, idempotent accounting rather than browser timers or process memory.","Separate usage telemetry from admission control; delayed billing data cannot enforce a real-time allowance."],
+      "limitations":["Not deployed. Authentication, quotas and live execution remain unimplemented.","This is not a complete production security or private-network design.","AI tools, retrieval, media, Fabric and Purview are not automatically included in the $100 target."]
+    },
+    {
+      "id":"enterprise-private-topology",
+      "title":"Enterprise private-connectivity pattern",
+      "kind":"topology",
+      "profile":"Enterprise reference - separate cost profile",
+      "width":1280,
+      "height":820,
+      "summary":"A simplified adaptation of Microsoft's baseline Foundry chat architecture, not a replacement for its full network design.",
+      "boundary":"Service icons on the right represent managed PaaS resources. They are not depicted as compute deployed inside the workload VNet.",
+      "sources":["MS03","MS14"],
+      "groups":[
+        {"label":"Workload VNet - simplified connectivity view","box":[32,124,624,566]},
+        {"label":"Managed PaaS service plane","box":[712,124,536,566]}
+      ],
+      "nodes":[
+        {"id":"gateway","label":"Application Gateway","detail":"WAF / HTTPS ingress","icon":"gateway","box":[64,196,240,112]},
+        {"id":"app","label":"Azure App Service","detail":"Chat UI / managed identity","icon":"app-service","box":[368,196,248,112]},
+        {"id":"endpoints","label":"Private endpoints","detail":"Private Link + DNS required","icon":"private-endpoint","box":[368,392,248,112]},
+        {"id":"firewall","label":"Azure Firewall","detail":"Governed external-tool egress","icon":"firewall","box":[64,392,240,112]},
+        {"id":"agents","label":"Foundry Agent Service","detail":"Standard agent setup","icon":"agents","box":[752,196,448,112]},
+        {"id":"search","label":"Azure AI Search","detail":"Grounding / managed indexes","icon":"search","box":[752,392,216,128]},
+        {"id":"models","label":"Foundry Models","detail":"Configured language model","icon":"models","box":[1000,392,216,128]},
+        {"id":"state","label":"Azure Cosmos DB","detail":"Agent-owned conversation state","icon":"cosmos","box":[752,552,216,112]},
+        {"id":"files","label":"Azure Storage","detail":"Dedicated agent file storage","icon":"storage","box":[1000,552,216,112]}
+      ],
+      "edges":[
+        {"points":[[304,252],[368,252]],"label":"TLS","label_at":[336,224]},
+        {"points":[[492,308],[492,392]],"label":"MI + private access","label_at":[496,344]},
+        {"points":[[616,448],[684,448],[684,252],[752,252]],"label":"Private Link","label_at":[682,326]},
+        {"points":[[864,308],[864,392]],"label":"Tool","label_at":[830,342]},
+        {"points":[[1080,308],[1108,308],[1108,392]],"label":"Inference","label_at":[1136,340]},
+        {"points":[[800,308],[728,308],[728,608],[752,608]],"label":"State","label_at":[728,530],"dashed":true},
+        {"points":[[1176,308],[1232,308],[1232,608],[1216,608]],"label":"Files","label_at":[1210,530],"dashed":true},
+        {"points":[[752,280],[680,280],[680,352],[184,352],[184,392]],"label":"External tools via egress policy","label_at":[292,326],"dashed":true}
+      ],
+      "steps":[
+        {"text":"The baseline routes inbound traffic through Application Gateway/WAF to an App Service chat UI. The UI authenticates to Foundry using managed identity and private reachability.","sources":["MS03"]},
+        {"text":"Standard agent setup uses workload-owned network and dedicated agent-managed resources. Application session/quota tables must be separate from agent-managed stores.","sources":["MS03"]},
+        {"text":"The agent can query AI Search, invoke its model, and persist conversation items. Public tool egress requires the baseline's outbound controls; private tool paths remain private.","sources":["MS03"]},
+        {"text":"This enterprise pattern has a separate cost and reliability profile. It is not silently included in a consumption demo budget.","sources":["MS14"]}
+      ],
+      "decisions":["Use the complete Microsoft baseline for subnet sizing, DNS, egress, access, availability and deployment details.","Keep agent-managed state exclusive to Agent Service.","Treat private networking as connectivity control, not a substitute for authorization."],
+      "limitations":["Adapted excerpt, not Microsoft's unmodified official diagram or a deployable network specification.","DNS, individual private endpoints, availability zones, build infrastructure and detailed routes are intentionally not expanded.","No enterprise resources or private endpoints have been provisioned."]
+    },
+    {
+      "id":"visitor-session-sequence",
+      "title":"Visitor admission and session sequence",
+      "kind":"sequence",
+      "profile":"Application contract - not implemented",
+      "width":1280,
+      "height":1030,
+      "summary":"Authentication, application session admission, and paid-action authorization are three distinct decisions.",
+      "boundary":"The short application session is independent of identity-token lifetime. Unknown accounting, expired sessions and exhausted allowances must deny paid work.",
+      "sources":["MS05","MS06","MS14"],
+      "nodes":[
+        {"id":"browser","label":"Visitor browser","detail":"Public microsite","box":[32,132,216,116]},
+        {"id":"entra","label":"Entra External ID","detail":"Managed email OTP","icon":"external-id","box":[284,132,216,116]},
+        {"id":"api","label":"Demo API","detail":"Azure Container Apps","icon":"container-apps","box":[536,132,216,116]},
+        {"id":"ledger","label":"Azure Storage","detail":"Durable admission ledger","icon":"storage","box":[788,132,216,116]},
+        {"id":"foundry","label":"Microsoft Foundry","detail":"Paid AI operation","icon":"foundry","box":[1040,132,216,116]}
+      ],
+      "messages":[
+        {"from_id":"browser","to_id":"entra","label":"1. Email OTP sign-in"},
+        {"from_id":"entra","to_id":"browser","label":"2. Authenticated application","dashed":true},
+        {"from_id":"browser","to_id":"api","label":"3. Access token + explicit session start"},
+        {"from_id":"api","to_id":"ledger","label":"4. Approval + daily-start reservation"},
+        {"from_id":"ledger","to_id":"api","label":"5. Accept or conflict (ETag)","dashed":true},
+        {"from_id":"api","to_id":"browser","label":"6. Session id / absolute 900-second expiry","dashed":true},
+        {"from_id":"browser","to_id":"api","label":"7. Demo request + session"},
+        {"from_id":"api","to_id":"ledger","label":"8. Check expiry / reserve usage"},
+        {"from_id":"api","to_id":"foundry","label":"9. Call only after admission"},
+        {"from_id":"foundry","to_id":"api","label":"10. Result / actual usage","dashed":true},
+        {"from_id":"api","to_id":"browser","label":"11. Response within remaining deadline","dashed":true}
+      ],
+      "steps":[
+        {"text":"External ID manages email OTP. Successful authentication does not imply that this application's visitor allowlist or spending policies have approved access.","sources":["MS05"]},
+        {"text":"A successful, idempotent start reserves one of three sessions for the approved identity in a UTC calendar day. The API sets an absolute expiry 900 seconds after creation.","sources":["MS06"]},
+        {"text":"Each paid action checks expiry and reserves bounded usage before provider execution. Use ETags and partition-aware transactions; compensate or safely retain failed reservations rather than permit overspend.","sources":["MS06","MS14"]},
+        {"text":"Streams, voice and tool loops must stop at the application deadline. Refreshing an identity token must not extend that deadline.","sources":["MS05","MS14"]}
+      ],
+      "decisions":["Treat 900 seconds and three daily starts as repository policy, not Microsoft service defaults.","Never claim cross-partition atomicity in Azure Tables.","Use explicit rejection paths for approval, capacity, quota, price or ledger failures."],
+      "limitations":["Sequence specification only; no OTP, session or payment enforcement is implemented.","OIDC/MSAL protocol exchanges are intentionally abstracted; a real implementation must validate access tokens for its configured issuer/audience/scopes.","Three identities do not prove three distinct humans; approval and abuse controls remain necessary."]
+    },
+    {
+      "id":"grounded-agent-sequence",
+      "title":"Grounded agent request sequence",
+      "kind":"sequence",
+      "profile":"Adapted Microsoft enterprise flow",
+      "width":1280,
+      "height":830,
+      "summary":"Trace the path from an authenticated UI through retrieval, model execution, conversation state and a grounded response.",
+      "boundary":"This adapts the baseline's agent workflow. Source references must be validated; a model answer alone is not evidence that a source supports it.",
+      "sources":["MS03"],
+      "nodes":[
+        {"id":"ui","label":"Azure App Service","detail":"Managed-identity caller","icon":"app-service","box":[32,132,216,116]},
+        {"id":"agent","label":"Foundry Agent Service","detail":"Prompt agent / tools","icon":"agents","box":[284,132,216,116]},
+        {"id":"search","label":"Azure AI Search","detail":"Authorized grounding","icon":"search","box":[536,132,216,116]},
+        {"id":"model","label":"Foundry Models","detail":"Configured model","icon":"models","box":[788,132,216,116]},
+        {"id":"state","label":"Azure Cosmos DB","detail":"Agent-managed state","icon":"cosmos","box":[1040,132,216,116]}
+      ],
+      "messages":[
+        {"from_id":"ui","to_id":"agent","label":"1. Query + conversation"},
+        {"from_id":"agent","to_id":"search","label":"2. Grounding tool query"},
+        {"from_id":"search","to_id":"agent","label":"3. Evidence / source references","dashed":true},
+        {"from_id":"agent","to_id":"model","label":"4. Instructions + relevant context"},
+        {"from_id":"model","to_id":"agent","label":"5. Generated response","dashed":true},
+        {"from_id":"agent","to_id":"state","label":"6. Persist conversation items"},
+        {"from_id":"agent","to_id":"ui","label":"7. Response + available references","dashed":true}
+      ],
+      "steps":[
+        {"text":"The App Service caller uses managed identity and the baseline's private path to invoke the agent with the user query and conversation context.","sources":["MS03"]},
+        {"text":"Agent Service orchestrates the configured search tool, then its configured language model with relevant grounding context. The diagram does not assume public search or anonymous data access.","sources":["MS03"]},
+        {"text":"Under standard agent setup, Agent Service manages the dedicated Cosmos DB conversation store. It is not a general application session database.","sources":["MS03"]},
+        {"text":"The UI receives the result and any available source references. Application acceptance should check relevant evidence, citations, policy failures, empty retrieval and timeouts.","sources":["MS03"]}
+      ],
+      "decisions":["Treat retrieved text as untrusted input, not authorization or executable instructions.","Keep conversation retention separate from the short visitor-session contract.","Include negative cases and evidence checks in the eventual evaluation harness."],
+      "limitations":["Conceptual ordering; internal model/tool iterations can vary by agent configuration.","No claim is made that references guarantee truth or that this repository has passed live grounding evaluations.","Agent Service standard setup is distinct from a minimal basic demo setup."]
+    },
+    {
+      "id":"ontology-business-model",
+      "title":"Business ontology and source bindings",
+      "kind":"ontology",
+      "profile":"Connected Fabric IQ preview - optional",
+      "width":1280,
+      "height":830,
+      "summary":"A fictional commerce vocabulary makes entity types, properties, relationships and their source bindings explicit.",
+      "boundary":"Ontology supplies business context, not a new general-purpose query engine. Graph materialization is optional, not automatic.",
+      "sources":["MS07","MS08"],
+      "groups":[
+        {"label":"Synthetic namespace: demo.commerce - entity types, not customer data","box":[32,128,1216,362]}
+      ],
+      "nodes":[
+        {"id":"customer","label":"Customer","detail":"customerId: string\nsegment: string","box":[64,214,220,136]},
+        {"id":"order","label":"Order","detail":"orderId / customerId\nstatus / amount","box":[360,214,236,136]},
+        {"id":"line","label":"OrderLine","detail":"lineId / orderId\nproductId / quantity","box":[680,214,236,136]},
+        {"id":"product","label":"Product","detail":"productId: string\ncategory: string","box":[1000,214,216,136]},
+        {"id":"lakehouse","label":"Fabric Lakehouse","detail":"Governed source tables\nData remains at source","icon":"lakehouse","box":[64,566,352,128]},
+        {"id":"ontology","label":"Fabric IQ ontology","detail":"Definitions + bindings (preview)\nEntity / property / relationship","icon":"fabric","box":[480,566,352,128]},
+        {"id":"consumer","label":"Supported consumers","detail":"Agents / dashboards\nQuery authorized bound sources","box":[896,566,320,128]}
+      ],
+      "edges":[
+        {"points":[[284,282],[360,282]],"label":"places","label_at":[322,254]},
+        {"points":[[596,282],[680,282]],"label":"contains","label_at":[638,254]},
+        {"points":[[916,282],[1000,282]],"label":"refers to","label_at":[958,254]},
+        {"points":[[656,566],[656,490]],"label":"Definitions and relationship mappings","label_at":[868,516],"dashed":true},
+        {"points":[[416,630],[480,630]],"label":"Bind","label_at":[448,604]},
+        {"points":[[832,630],[896,630]],"label":"Context","label_at":[864,604],"dashed":true}
+      ],
+      "steps":[
+        {"text":"Define reusable entity types and typed properties in the synthetic demo.commerce namespace. An entity type is a definition; an entity instance is a data-backed occurrence.","sources":["MS07"]},
+        {"text":"Declare Customer places Order, Order contains OrderLine, and OrderLine refers to Product. The illustrated one-to-many business intent is a demo contract, not an asserted automatic Fabric cardinality constraint.","sources":["MS07","MS08"]},
+        {"text":"Bind identifiers and relationship properties to governed source tables. Direct-column or mapping-table bindings depend on the relationship and supported source shape.","sources":["MS08"]},
+        {"text":"Supported consumers use the ontology's context and authorized bound sources. A graph schema does not automatically load instance data; opt-in graph execution needs separate decisions.","sources":["MS07"]}
+      ],
+      "decisions":["Do not confuse an ontology, a relational schema, a Purview glossary, a vector index or an LLM prompt.","Natural-language ontology rules convey context; enforceable quality/security constraints still need explicit implementation.","Keep source-owned calculations and access controls at their authoritative sources."],
+      "limitations":["Fabric IQ ontology is preview, not a Foundry-native capability or deployed component of this repo.","Requires appropriate Fabric capacity, item permissions, tenant settings and supported bindings.","The downloadable synthetic model is explanatory JSON, not a supported Fabric import or deployment format."]
+    },
+    {
+      "id":"data-quality-publication",
+      "title":"Quality-gated knowledge publication",
+      "kind":"data-quality",
+      "profile":"Optional Fabric + Purview reference",
+      "width":1280,
+      "height":910,
+      "summary":"Separate data refinement, governance assessment and an explicitly owned publication gate before AI retrieval.",
+      "boundary":"Purview assesses configured quality rules. Blocking publication and quarantining data are explicit pipeline responsibilities, not an automatic Purview side effect.",
+      "sources":["MS09","MS10","MS11","MS12","MS13"],
+      "groups":[
+        {"label":"Microsoft Fabric / OneLake - separate refinement layers","box":[32,128,1216,286]},
+        {"label":"Governance, enforcement and consumption are different responsibilities","box":[32,458,1216,332]}
+      ],
+      "nodes":[
+        {"id":"ingest","label":"Fabric pipeline","detail":"Synthetic source ingestion","icon":"pipeline","box":[64,220,240,120]},
+        {"id":"bronze","label":"Bronze lakehouse","detail":"Preserved raw records","icon":"lakehouse","box":[368,220,240,120]},
+        {"id":"silver","label":"Silver lakehouse","detail":"Types / nulls / deduplication","icon":"lakehouse","box":[672,220,240,120]},
+        {"id":"gold","label":"Gold lakehouse","detail":"Curated data product","icon":"lakehouse","box":[976,220,240,120]},
+        {"id":"purview","label":"Microsoft Purview","detail":"Profile / rules / scans / scores","icon":"purview","box":[64,540,336,120]},
+        {"id":"gate","label":"Owned publication gate","detail":"Rule evidence + explicit policy\nApprove, stop or remediate","box":[480,540,336,120]},
+        {"id":"search","label":"Azure AI Search","detail":"Approved retrieval snapshot\nVersion / lineage / access","icon":"search","box":[896,540,320,120]},
+        {"id":"remediate","label":"Remediation / quarantine","detail":"Pipeline-owned rejected evidence","box":[480,700,336,84]}
+      ],
+      "edges":[
+        {"points":[[304,280],[368,280]],"label":"Ingest","label_at":[336,252]},
+        {"points":[[608,280],[672,280]],"label":"Refine","label_at":[640,252]},
+        {"points":[[912,280],[976,280]],"label":"Curate","label_at":[944,252]},
+        {"points":[[1096,340],[1096,438],[232,438],[232,540]],"label":"Configured scanning of supported Fabric assets","label_at":[666,414],"dashed":true},
+        {"points":[[400,600],[480,600]],"label":"Evidence","label_at":[440,574],"dashed":true},
+        {"points":[[816,600],[896,600]],"label":"Approved","label_at":[856,574]},
+        {"points":[[648,660],[648,700]],"label":"Fail","label_at":[690,666]},
+        {"points":[[1096,340],[1232,340],[1232,506],[648,506],[648,540]],"label":"Candidate snapshot","label_at":[1008,480]}
+      ],
+      "steps":[
+        {"text":"Preserve source data in bronze; standardize and validate in silver; publish curated products in gold. Separation and ownership are deliberate parts of the medallion pattern.","sources":["MS09"]},
+        {"text":"Register and scan sources, assign a data product, configure a quality connection, profile, define rules and run assessments. Purview can assess supported Fabric lakehouse/Delta data subject to source, identity and regional prerequisites.","sources":["MS10","MS12"]},
+        {"text":"Measure the documented dimensions: completeness, consistency, conformity, accuracy, freshness and uniqueness. Use rule-specific semantics; uniqueness alone can ignore nulls without an empty/blank check.","sources":["MS10","MS11"]},
+        {"text":"Implement the owned gate before indexing. Fabric transformation constraints can FAIL or DROP records; explicit quarantine, thresholds, sign-off and publication orchestration remain workload decisions.","sources":["MS13","MS11"]},
+        {"text":"Record dataset version, rule version, scan evidence, owner and approval with the retrieval snapshot. A high quality score is not proof of factual truth, safe access or grounded model output.","sources":["MS10","MS11"]}
+      ],
+      "decisions":["Do not publish on an unknown, failed or stale quality assessment.","Distinguish source-data quality from ontology semantics and LLM answer evaluation.","Define accuracy against an authoritative oracle; use known synthetic truth only for local examples."],
+      "limitations":["Reference architecture only: Fabric/Purview capacity, connectors, scans and indexing are not provisioned.","Regional co-location, managed-identity permissions, supported formats and current connector restrictions require preflight verification.","Example thresholds are demo policy, not Microsoft defaults or measured cloud scores."]
+    }
+  ],
+  "ontology_example": {
+    "format_notice":"Explanatory synthetic contract, not a Fabric import/API schema.",
+    "namespace":"demo.commerce",
+    "entities":{
+      "Customer":[{"customerId":"C001","segment":"Synthetic research"},{"customerId":"C002","segment":"Synthetic operations"}],
+      "Order":[{"orderId":"O001","customerId":"C001","status":"Approved","amount":120},{"orderId":"O002","customerId":"C002","status":"Draft","amount":60}],
+      "OrderLine":[{"lineId":"L001","orderId":"O001","productId":"P001","quantity":2},{"lineId":"L002","orderId":"O002","productId":"P002","quantity":1}],
+      "Product":[{"productId":"P001","category":"Synthetic sensor"},{"productId":"P002","category":"Synthetic gateway"}]
+    },
+    "relationships":[
+      {"name":"places","origin":"Customer.customerId","target":"Order.customerId","demo_cardinality":"one-to-many"},
+      {"name":"contains","origin":"Order.orderId","target":"OrderLine.orderId","demo_cardinality":"one-to-many"},
+      {"name":"refersTo","origin":"OrderLine.productId","target":"Product.productId","demo_cardinality":"many-to-one"}
+    ]
+  }
+}

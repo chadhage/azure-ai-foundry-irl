@@ -1,0 +1,2 @@
+# Preserve original Microsoft artwork bytes for provenance checks.
+docs/assets/icons/*.svg -text

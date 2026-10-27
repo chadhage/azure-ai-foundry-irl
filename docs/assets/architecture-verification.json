@@ -1,0 +1,174 @@
+{
+  "checked_utc": "2026-10-27T09:25:58.627794+00:00",
+  "scope": "Public documentation HTTP accessibility and evidence-term checks, plus human source review. Not a cloud/runtime certification.",
+  "sources": [
+    {
+      "id": "MS01",
+      "url": "https://learn.microsoft.com/azure/architecture/icons/",
+      "resolved_url": "https://learn.microsoft.com/en-us/azure/architecture/icons/",
+      "status": 200,
+      "sha256": "cf2f780f7f10151e2184fa2debd5cb7b29392f057733213402995a9576b23010",
+      "checked_terms": [
+        "Microsoft permits the use",
+        "Don't crop, flip, or rotate"
+      ]
+    },
+    {
+      "id": "MS02",
+      "url": "https://learn.microsoft.com/fabric/fundamentals/icons",
+      "resolved_url": "https://learn.microsoft.com/en-us/fabric/fundamentals/icons",
+      "status": 200,
+      "sha256": "fc6b87f6cd008c95add389867b87556b44786ea270c78ce0801afdc51a5f6692",
+      "checked_terms": [
+        "Microsoft permits the use",
+        "Icons.zip"
+      ]
+    },
+    {
+      "id": "MS03",
+      "url": "https://learn.microsoft.com/azure/architecture/ai-ml/architecture/baseline-microsoft-foundry-chat",
+      "resolved_url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/baseline-microsoft-foundry-chat",
+      "status": 200,
+      "sha256": "694b98ec22dd4e1043bbc2b9daf69c41ba6d88dbf06281e540deeb5485aec8cd",
+      "checked_terms": [
+        "standard agent setup",
+        "private endpoint",
+        "conversation"
+      ]
+    },
+    {
+      "id": "MS04",
+      "url": "https://learn.microsoft.com/azure/container-apps/overview",
+      "resolved_url": "https://learn.microsoft.com/en-us/azure/container-apps/overview",
+      "status": 200,
+      "sha256": "91992d172fb34f26e0de335bb3b8afdc242264cb093626c51a9ad972b6bdd8ca",
+      "checked_terms": [
+        "API endpoints",
+        "scale to zero",
+        "HTTPS"
+      ]
+    },
+    {
+      "id": "MS05",
+      "url": "https://learn.microsoft.com/entra/external-id/customers/how-to-user-flow-sign-up-sign-in-customers",
+      "resolved_url": "https://learn.microsoft.com/en-us/entra/external-id/customers/how-to-user-flow-sign-up-sign-in-customers",
+      "status": 200,
+      "sha256": "3ea00df3695d45e3e207136acfc108f05293fab013adb5c2e56db379d7c3bad5",
+      "checked_terms": [
+        "Email one-time passcode",
+        "external tenant"
+      ]
+    },
+    {
+      "id": "MS06",
+      "url": "https://learn.microsoft.com/azure/storage/tables/table-storage-design",
+      "resolved_url": "https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-design",
+      "status": 200,
+      "sha256": "13f15ad02d3b3074b64565835e1892fb389d3f848a5a146c86ef1131f1e663ba",
+      "checked_terms": [
+        "ETag",
+        "same partition",
+        "Entity Group Transactions"
+      ]
+    },
+    {
+      "id": "MS07",
+      "url": "https://learn.microsoft.com/fabric/iq/ontology/overview",
+      "resolved_url": "https://learn.microsoft.com/en-us/fabric/iq/ontology/overview",
+      "status": 200,
+      "sha256": "034769012e70b22cab2f6a3e5fb83c8813db6b9d8317584b933405c3e424a445",
+      "checked_terms": [
+        "preview",
+        "data binding",
+        "general-purpose data-query engine"
+      ]
+    },
+    {
+      "id": "MS08",
+      "url": "https://learn.microsoft.com/fabric/iq/ontology/how-to-create-relationship-types",
+      "resolved_url": "https://learn.microsoft.com/en-us/fabric/iq/ontology/how-to-create-relationship-types",
+      "status": 200,
+      "sha256": "2df1df59c939b00ea515cbc2105fa14839bc9b6d6b74bd1015dba685495db9ce",
+      "checked_terms": [
+        "preview",
+        "Origin entity type",
+        "mapping table"
+      ]
+    },
+    {
+      "id": "MS09",
+      "url": "https://learn.microsoft.com/fabric/onelake/onelake-medallion-lakehouse-architecture",
+      "resolved_url": "https://learn.microsoft.com/en-us/fabric/onelake/onelake-medallion-lakehouse-architecture",
+      "status": 200,
+      "sha256": "c798dce193227900141979d3a01a1389d8c512b4515f55b9e0c66dc29cb99c13",
+      "checked_terms": [
+        "Bronze",
+        "Silver",
+        "Gold",
+        "Delta"
+      ]
+    },
+    {
+      "id": "MS10",
+      "url": "https://learn.microsoft.com/purview/unified-catalog-data-quality",
+      "resolved_url": "https://learn.microsoft.com/en-us/purview/unified-catalog-data-quality",
+      "status": 200,
+      "sha256": "bc181253c7b85a657511961e121c45fadb037136135e691b538e127a8090efcb",
+      "checked_terms": [
+        "completeness",
+        "conformity",
+        "freshness",
+        "Managed Identity"
+      ]
+    },
+    {
+      "id": "MS11",
+      "url": "https://learn.microsoft.com/purview/unified-catalog-data-quality-rules",
+      "resolved_url": "https://learn.microsoft.com/en-us/purview/unified-catalog-data-quality-rules",
+      "status": 200,
+      "sha256": "d309e91d72cbf821df04c29c2970e57eca569a0f2852ddd7e29009b07aa95a4d",
+      "checked_terms": [
+        "Table lookup",
+        "Empty/blank fields",
+        "last modified dates"
+      ]
+    },
+    {
+      "id": "MS12",
+      "url": "https://learn.microsoft.com/purview/unified-catalog-data-quality-supported-sources-file-formats",
+      "resolved_url": "https://learn.microsoft.com/en-us/purview/unified-catalog-data-quality-supported-sources-file-formats",
+      "status": 200,
+      "sha256": "ce386514ea7748f5b1d27fa76a03c0aa41e58bfadc66e2378b7e5d2acfabcf56",
+      "checked_terms": [
+        "Fabric",
+        "Lakehouse",
+        "Delta",
+        "Parquet"
+      ]
+    },
+    {
+      "id": "MS13",
+      "url": "https://learn.microsoft.com/fabric/data-engineering/materialized-lake-views/data-quality",
+      "resolved_url": "https://learn.microsoft.com/en-us/fabric/data-engineering/materialized-lake-views/data-quality",
+      "status": 200,
+      "sha256": "0d9796fc6a0cef2874710f15f52a11e094b781d0846973238085968f50881377",
+      "checked_terms": [
+        "Row-level data quality constraints",
+        "FAIL",
+        "DROP"
+      ]
+    },
+    {
+      "id": "MS14",
+      "url": "https://learn.microsoft.com/azure/foundry/concepts/manage-costs",
+      "resolved_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/manage-costs",
+      "status": 200,
+      "sha256": "dd9a8ba5f685f65a2c88bfcaed069d83b2ff0798d7162f0b1ce0fb327e9f7be9",
+      "checked_terms": [
+        "Fine-tuned",
+        "Hosting",
+        "usage"
+      ]
+    }
+  ]
+}

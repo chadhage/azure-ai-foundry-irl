@@ -1,0 +1,74 @@
+{
+  "format_notice": "Explanatory synthetic contract, not a Fabric import/API schema.",
+  "namespace": "demo.commerce",
+  "entities": {
+    "Customer": [
+      {
+        "customerId": "C001",
+        "segment": "Synthetic research"
+      },
+      {
+        "customerId": "C002",
+        "segment": "Synthetic operations"
+      }
+    ],
+    "Order": [
+      {
+        "orderId": "O001",
+        "customerId": "C001",
+        "status": "Approved",
+        "amount": 120
+      },
+      {
+        "orderId": "O002",
+        "customerId": "C002",
+        "status": "Draft",
+        "amount": 60
+      }
+    ],
+    "OrderLine": [
+      {
+        "lineId": "L001",
+        "orderId": "O001",
+        "productId": "P001",
+        "quantity": 2
+      },
+      {
+        "lineId": "L002",
+        "orderId": "O002",
+        "productId": "P002",
+        "quantity": 1
+      }
+    ],
+    "Product": [
+      {
+        "productId": "P001",
+        "category": "Synthetic sensor"
+      },
+      {
+        "productId": "P002",
+        "category": "Synthetic gateway"
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "name": "places",
+      "origin": "Customer.customerId",
+      "target": "Order.customerId",
+      "demo_cardinality": "one-to-many"
+    },
+    {
+      "name": "contains",
+      "origin": "Order.orderId",
+      "target": "OrderLine.orderId",
+      "demo_cardinality": "one-to-many"
+    },
+    {
+      "name": "refersTo",
+      "origin": "OrderLine.productId",
+      "target": "Product.productId",
+      "demo_cardinality": "many-to-one"
+    }
+  ]
+}

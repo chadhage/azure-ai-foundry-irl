@@ -1,0 +1,130 @@
+{
+  "icons": [
+    {
+      "id": "foundry",
+      "file": "foundry.svg",
+      "package": "azure-v24",
+      "archive_entry": "Azure_Public_Service_Icons/Icons/ai + machine learning/035746832-icon-service-AI-Foundry.svg",
+      "sha256": "fab039a771f72780ae34e59065d61c66a02d3c347d50923ef2956f34912ea02c"
+    },
+    {
+      "id": "agents",
+      "file": "agents.svg",
+      "package": "azure-v24",
+      "archive_entry": "Azure_Public_Service_Icons/Icons/ai + machine learning/038470523-icon-service-Foundry-Agent-Service.svg",
+      "sha256": "aedb65eeb06c1d4f3d57568edd2e8e7205065589ae8ceba4513a2fd21b4053ca"
+    },
+    {
+      "id": "models",
+      "file": "models.svg",
+      "package": "azure-v24",
+      "archive_entry": "Azure_Public_Service_Icons/Icons/ai + machine learning/038470614-icon-service-Foundry-Models.svg",
+      "sha256": "9c671f141cb0e19b62e004628183ed8711ad16ec3b2e56b14c3cd035d5fac711"
+    },
+    {
+      "id": "search",
+      "file": "search.svg",
+      "package": "azure-v24",
+      "archive_entry": "Azure_Public_Service_Icons/Icons/ai + machine learning/10044-icon-service-Cognitive-Search.svg",
+      "sha256": "f7af1213ce089236593835cb5564d6d3f01358cba6488fe562aa8bbc8adc3b38"
+    },
+    {
+      "id": "container-apps",
+      "file": "container-apps.svg",
+      "package": "azure-v24",
+      "archive_entry": "Azure_Public_Service_Icons/Icons/other/02989-icon-service-Container-Apps-Environments.svg",
+      "sha256": "3cf4ba9242e31496f778a27e92c9c2b2a09664f105c58325d5e2dcb142d3c3b9"
+    },
+    {
+      "id": "external-id",
+      "file": "external-id.svg",
+      "package": "azure-v24",
+      "archive_entry": "Azure_Public_Service_Icons/Icons/identity/03425-icon-service-external-id.svg",
+      "sha256": "d7060db7676627ee842a6f2bdd9c0198cb6f5b784b5dc8302b52c7d449a18cbd"
+    },
+    {
+      "id": "storage",
+      "file": "storage.svg",
+      "package": "azure-v24",
+      "archive_entry": "Azure_Public_Service_Icons/Icons/storage/10086-icon-service-Storage-Accounts.svg",
+      "sha256": "7190d3bb14ce30ce74bd0af873915830fe821e8c5f6ef6f3149e6f7cfb2aa4f7"
+    },
+    {
+      "id": "monitor",
+      "file": "monitor.svg",
+      "package": "azure-v24",
+      "archive_entry": "Azure_Public_Service_Icons/Icons/management + governance/00001-icon-service-Monitor.svg",
+      "sha256": "1396f59a7d8fd7505a423842b987c9b343a092263d1ab5c7b0d94d58d8b17448"
+    },
+    {
+      "id": "key-vault",
+      "file": "key-vault.svg",
+      "package": "azure-v24",
+      "archive_entry": "Azure_Public_Service_Icons/Icons/security/10245-icon-service-Key-Vaults.svg",
+      "sha256": "712b426f54f0fc50d0816dc79df709daa7ac5f93ccaf4e9b3527f627f6e9ad97"
+    },
+    {
+      "id": "app-service",
+      "file": "app-service.svg",
+      "package": "azure-v24",
+      "archive_entry": "Azure_Public_Service_Icons/Icons/app services/10035-icon-service-App-Services.svg",
+      "sha256": "529d83fc80637a96b6d27f6cfac7536e1c5f9b1b67f58aef4e2e3d6f47fd4925"
+    },
+    {
+      "id": "gateway",
+      "file": "gateway.svg",
+      "package": "azure-v24",
+      "archive_entry": "Azure_Public_Service_Icons/Icons/networking/10076-icon-service-Application-Gateways.svg",
+      "sha256": "531e668e47cf61872b2811ec67dcc103cee2ecc1d272f07132d6196d68ba6c19"
+    },
+    {
+      "id": "private-endpoint",
+      "file": "private-endpoint.svg",
+      "package": "azure-v24",
+      "archive_entry": "Azure_Public_Service_Icons/Icons/other/02579-icon-service-Private-Endpoints.svg",
+      "sha256": "96de0bb7f0aeb1220d0fd6d337578d5e93dca017d6ea7d42d887aa329b2fd90d"
+    },
+    {
+      "id": "cosmos",
+      "file": "cosmos.svg",
+      "package": "azure-v24",
+      "archive_entry": "Azure_Public_Service_Icons/Icons/databases/10121-icon-service-Azure-Cosmos-DB.svg",
+      "sha256": "b6f1f2afac15762d1de44366d34984c5a3e6e58f94d9e81407ac01565212e8e3"
+    },
+    {
+      "id": "firewall",
+      "file": "firewall.svg",
+      "package": "azure-v24",
+      "archive_entry": "Azure_Public_Service_Icons/Icons/networking/10084-icon-service-Firewalls.svg",
+      "sha256": "154c416cc15b95b7c6c1ab61a5ecb33f14845197b7d163bd9dc6f1968c14be1e"
+    },
+    {
+      "id": "fabric",
+      "file": "fabric.svg",
+      "package": "fabric-6.1.0",
+      "archive_entry": "v6.1.0/package/dist/svg/fabric_48_color.svg",
+      "sha256": "ef80d2edbfc1b045241d2e9550b7930b648d8018e0274116a3df6d6ccf3adbf9"
+    },
+    {
+      "id": "lakehouse",
+      "file": "lakehouse.svg",
+      "package": "fabric-6.1.0",
+      "archive_entry": "v6.1.0/package/dist/svg/lakehouse_48_item.svg",
+      "sha256": "7f4ba4303e8f507d4ec8e47bc055bace80eb9715ccc58df40021b776a3c65f08"
+    },
+    {
+      "id": "pipeline",
+      "file": "pipeline.svg",
+      "package": "fabric-6.1.0",
+      "archive_entry": "v6.1.0/package/dist/svg/pipeline_48_item.svg",
+      "sha256": "a0df60d8e899ff5f8bdb80fe5281cba002735267297f371098f5ff6d55bbe744"
+    },
+    {
+      "id": "purview",
+      "file": "purview.svg",
+      "package": "fabric-6.1.0",
+      "archive_entry": "v6.1.0/package/dist/svg/purview_48_color.svg",
+      "sha256": "770db45103ee13f59e6dbd9152188c090ea6e91639c87efa1cd0c2d8e40d53da"
+    }
+  ]
+}
